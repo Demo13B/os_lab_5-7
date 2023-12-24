@@ -1,15 +1,17 @@
 #include <iostream>
+#include "ZMQ.hpp"
 #include "balancedTree.hpp"
 #include "dictionaryNode.hpp"
-#include "ZMQ.hpp"
 
 void menu() {
+    std::cout << "---------------------\n";
     std::cout << "Avaliable commands:\n";
-    std::cout << "create <id>\n";
-    std::cout << "exec <key>\n";
-    std::cout << "ping <id>\n";
-    std::cout << "kill <id>\n";
-    std::cout << "exit\n";
+    std::cout << "1. create <id>\n";
+    std::cout << "2. exec <key>\n";
+    std::cout << "3. ping <id>\n";
+    std::cout << "4. kill <id>\n";
+    std::cout << "5. exit\n";
+    std::cout << "---------------------\n";
 }
 
 int main() {
@@ -117,5 +119,7 @@ int main() {
             std::cout << "Please enter correct command!\n\n";
             menu();
         }
+
+        std::cout << "---------------------\n";
     }
 }

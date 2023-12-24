@@ -7,7 +7,11 @@
 class DictionaryNode {
    private:
     zmq::context_t context;
-    std::map<std::string, int> _dictionary = {{"one", 1}, {"dick", 2}};
+    std::map<std::string, int> _dictionary = {
+        {"one", 1},
+        {"two", 2},
+        {"twenty_three", 23},
+        {"one_hundred_and_four", 104}};
 
    public:
     zmq::socket_t left, right, parent;
